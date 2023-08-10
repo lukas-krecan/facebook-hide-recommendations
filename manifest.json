@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Facebook Hide Suggestions",
+  "version": "1.0",
+  "description": "Hides specific divs on Facebook based on user-defined criteria.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://www.facebook.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
