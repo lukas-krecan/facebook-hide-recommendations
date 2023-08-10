@@ -10,7 +10,7 @@ This extension searches for elements with the text "Návrhy pro vás" (easily co
 
 1. Clone this repository:
 ```
-git clone https://github.com/lukas-krecan/facebook-hide-suggestions.git$
+git clone https://github.com/lukas-krecan/facebook-hide-suggestions.git
 ```
 2. Open Chrome and go to `chrome://extensions/`.
 3. Enable "Developer mode" at the top right.
