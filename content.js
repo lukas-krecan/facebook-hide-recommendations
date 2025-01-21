@@ -1,11 +1,11 @@
 // Configuration variables
-const targetText = "Návrhy pro vás";
-const divDepth = 6;
+const targetTexts = ["Návrhy pro vás", "Sledovat", "Přidat se", "Sponzorováno"];
+const divDepth = 13;
 
 const hideRelevantDivs = () => {
     const elementsWithDirectText = Array.from(document.querySelectorAll('span')).filter(el => {
-        return Array.from(el.childNodes).some(child => 
-            child.nodeType === Node.TEXT_NODE && child.nodeValue.includes(targetText)
+        return Array.from(el.childNodes).some(child =>
+            child.nodeType === Node.TEXT_NODE && targetTexts.some(tt => child.nodeValue.includes(tt))
         );
     });
 
